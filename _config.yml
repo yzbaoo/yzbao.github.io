@@ -24,10 +24,10 @@ disqus:
   id:               "安静点"
 
 # URL
-# url:                "https://yzbaoo.github.io" # the base hostname & protocol for your site
+url:                "https://yzbaoo.github.io" # the base hostname & protocol for your site
 # url:                "http://localhost:4004" # use this url when you develop
-# baseurl:            "/yzbaoo.github.io" # the subpath of your site, e.g. /blog
-baseurl:                "http://localhost:4004" # use this url when you develop
+baseurl:            "/yzbaoo.github.io" # the subpath of your site, e.g. /blog
+# baseurl:                "http://localhost:4004" # use this url when you develop
 
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
