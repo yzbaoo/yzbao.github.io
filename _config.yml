@@ -3,11 +3,13 @@
 # # # # # # # # # # # # #
 
 # Basic
-name:               "yzb"
+name:               "HELLO yzb"
 
 author:
   github:           yzbaoo
   email:            yzb99666@163.com
+  # 暂时当成segmentfault
+  tumblr:           yzbaoo
 
 copyright:
   year:             2017
@@ -19,16 +21,16 @@ google-analytics:
 
 # Disqus
 disqus:
-  id:               "kiko-plus"
+  id:               "安静点"
 
 # URL
-# url:                "https://yzbaoo.github.io" # the base hostname & protocol for your site
-url:                "http://localhost:4004" # use this url when you develop
+url:                "https://yzbaoo.github.io" # the base hostname & protocol for your site
+# url:                "http://localhost:4004" # use this url when you develop
 baseurl:            "/yzbaoo.github.io" # the subpath of your site, e.g. /blog
 
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:           Asia/Seoul
+timezone:          	Asia/Shanghai
 permalink:          /:year-:month-:day/:title/
 
 # Pagination
@@ -42,14 +44,14 @@ kramdown:
 
 # Navigation
 nav:
-  - name:           "About"
+  - name:           "关于"
     url:            "/about"
-  - name:           "Archive"
+  - name:           "文章"
     url:            "/archive"
-  - name:           "Tags"
+  - name:           "标签"
     url:            "/tags"
   - name:           "Github"
-    url:            "https://github.com/AWEEKJ/Kiko-plus"
+    url:            "https://github.com/yzbaoo"
 
 # Sass
 sass:
