@@ -177,14 +177,8 @@ function onDocumentTouchEnd( event ) {
 }
 
 function onWindowDeviceOrientation( event ) {
-
-	// if ( event.beta ) {
-
-		gravity.x =  event.gamma * 9.8/900;
-		gravity.y =  event.beta *9.8/900;
-
-	// }
-
+		gravity.x =  event.gamma * 9.8/5000;
+		gravity.y =  event.beta *9.8/5000;
 }
 
 //
@@ -233,9 +227,9 @@ function createInstructions() {
 
 	var circle = new b2CircleDef();
 	circle.radius = size / 2;
-	circle.density = .5;
-	circle.friction = 0.3;
-	circle.restitution = 0.3;
+	circle.density = 1;
+	circle.friction = 1;
+	circle.restitution = .2;
 	b2body.AddShape(circle);
 	b2body.userData = {element: element};
 
