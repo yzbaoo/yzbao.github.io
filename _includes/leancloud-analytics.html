@@ -4,10 +4,10 @@
   <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
   <script>AV.initialize("{{site.leancloud.app_id}}", "{{site.leancloud.app_key}}");</script>
   <script>
-    function showHitCount(yzbBlog) {
+    function showHitCount(Counter) {
       /* 这是给一个页面中有多篇文章时所调用的，例如博客主界面或者存档界面。
       */
-      var query = new AV.Query(yzbBlog);
+      var query = new AV.Query(Counter);
       var entries = [];
       var $visitors = $(".leancloud_visitors");
 
@@ -50,13 +50,13 @@
         });
     }
 
-    function addCount(yzbBlog) {
+    function addCount(Counter) {
       // 页面（博客文章）中的信息：leancloud_visitors
       // id为page.url， data-flag-title为page.title
       var $visitors = $(".leancloud_visitors");
       var url = $visitors.attr('id').trim();
       var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(yzbBlog);
+      var query = new AV.Query(Counter);
 
       // 只根据文章的url查询LeanCloud服务器中的数据
       query.equalTo("url", url);
@@ -77,7 +77,7 @@
             });
           } else {
             // 执行这里，说明LeanCloud中还没有记录此文章
-            var newcounter = new yzbBlog();
+            var newcounter = new Counter();
             /* Set ACL */
             var acl = new AV.ACL();
             acl.setPublicReadAccess(true);
@@ -105,13 +105,13 @@
     }
 
     $(function() {
-      var yzbBlog = AV.Object.extend("yzbBlog");
+      var Counter = AV.Object.extend("Counter");
       if ($('.leancloud_visitors').length == 1) {
         // in post.html, so add 1 to hit counts
-        addCount(yzbBlog);
+        addCount(Counter);
       } else if ($('.post-link').length > 1){
         // in index.html, there are many 'leancloud_visitors' and 'post-link', so just show hit counts.
-        showHitCount(yzbBlog);
+        showHitCount(Counter);
       }
     });
   </script>
