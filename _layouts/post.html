@@ -24,7 +24,14 @@ layout: default
     </ul>
   </div>
   {{ content }}
-         
+           <!-- 点击量 -->
+           {% if site.leancloud.enable %}
+           <span id="{{ page.id  }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
+           <span class="post-meta-divider">|</span>
+           <span class="post-meta-item-text"> Hits:  </span>
+           <span class="leancloud-visitors-count"></span>
+           </span>
+           {% endif %}
   <!-- Disqus -->
   {% if page.comments != false and site.disqus.id %}
   <div class="post-disqus">
