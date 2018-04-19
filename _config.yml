@@ -31,7 +31,7 @@ baseurl:            "/yzbaoo.github.io" # the subpath of your site, e.g. /blog
 
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:          	Asia/Shanghai
+timezone:          	America/New_York
 permalink:          /:year-:month-:day/:title/
 
 # Pagination
@@ -42,6 +42,9 @@ paginate_path:      /page:num/
 markdown:           kramdown
 kramdown:
   input:            GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+  css_class: 'highlight'
 
 # Navigation
 nav:
