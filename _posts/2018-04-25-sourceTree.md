@@ -8,6 +8,7 @@ comments: true
 share: true
 ---
 
+下载：链接: https://pan.baidu.com/s/1WNiSAP7EMANobIGC8xHYmw 密码: xxbt
 1. 首先，安装完 SourceTree 以后先运行一次，弹出初始化登录页面后退出。
 ![图片描述][1]
 
@@ -45,5 +46,5 @@ accounts.json：
 ```
 重启软件
 
-  [1]: /img/bV9n2W
-  [2]: /img/bV9n4u
+  [1]: /images/20180425/1.png
+  [2]: /images/20180425/2.png
