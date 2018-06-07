@@ -9,6 +9,7 @@ share: true
 ---
 
 **1.点击样式闪动**
+
 Q: 当你点击一个链接或者通过Javascript定义的可点击元素的时候，它就会出现一个半透明的灰色背景。
 
 A:根本原因是-webkit-tap-highlight-color，这个属性是用于设定元素在移动设备（如Adnroid、iOS）上被触发点击事件时，响应的背景框的颜色。建议写在样式初始化中以避免所以问题：div,input(selector) {-webkit-tap-highlight-color: rgba(0,0,0,0);}另外出现蓝色边框：outline:none；
@@ -21,6 +22,7 @@ A:根本原因是-webkit-tap-highlight-color，这个属性是用于设定元素
 ```
 
 **2.屏蔽用户选择**
+
 Q: 禁止用户选择页面中的文字或者图片
 
 A:代码如下
@@ -33,6 +35,7 @@ A:代码如下
     user-select: none;
     
 **3移动端如何清除输入框内阴影**
+
 Q: 在iOS上，输入框默认有内部阴影，但无法使用 box-shadow 来清除，如果不需要阴影，可以这样关闭：
 
 A:代码如下
@@ -40,6 +43,7 @@ A:代码如下
     -webkit-appearance: none;
 
 **4.禁止文本缩放**
+
 Q: 禁止文本缩放
 
 A:代码如下
@@ -47,6 +51,7 @@ A:代码如下
     -webkit-text-size-adjust: 100%;
 
 **5.如何禁止保存或拷贝图像**
+
 Q: 如何禁止保存或拷贝图像
 
 A:代码如下
@@ -55,6 +60,7 @@ A:代码如下
     -webkit-touch-callout: none;}
 
 **6.解决字体在移动端比例缩小后出现锯齿的问题**
+
 Q: 解决字体在移动端比例缩小后出现锯齿的问题
 
 A:代码如下
@@ -62,6 +68,7 @@ A:代码如下
     -webkit-font-smoothing: antialiased;
 
 **7.设置input里面placeholder字体的大小**
+
 Q: 设置input里面placeholder字体的大小
 
 A:代码如下
@@ -69,6 +76,7 @@ A:代码如下
     ::-webkit-input-placeholder{ font-size:10pt;}
 
 **8.audio元素和video元素在ios和andriod中无法自动播放**
+
 Q: audio元素和video元素在ios和andriod中无法自动播放
 
 A:代码如下,触屏及播放
@@ -78,6 +86,7 @@ A:代码如下,触屏及播放
     })
 
 **9.手机拍照和上传图片**
+
 Q: 针对file类型增加不同的accept字段
 
 A:代码如下
@@ -89,6 +98,7 @@ A:代码如下
     <input type=file accept="video/*">
 
 **10.输入框自动填充颜色**
+
 Q: 针对input标签已经输入过的，会针对曾经输入的内容填充黄色背景，这是webkit内核自动添加的，对应的属性是autocomplete,默认是on,另对应的样式是input:-webkit-autofill 且是不可更改的。
 
 A:方案如下
@@ -97,6 +107,7 @@ A:方案如下
  box-shadow:0 0  0 1000px  #fff inset ;
  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 **11.开启硬件加速**
+
 Q: 优化渲染性能
 
 A:代码如下
