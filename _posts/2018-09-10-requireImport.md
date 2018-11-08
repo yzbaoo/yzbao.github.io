@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "笔记：总结require和import的区别"
+title: "笔记：总结require和import的区别test"
 description: ""
 date: 2018-09-10
 tags: [模块化规范]
