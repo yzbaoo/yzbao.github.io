@@ -19,18 +19,12 @@ share: true
 
 1. [bundle-loader](https://github.com/webpack-contrib/bundle-loader)
   代码搞得太长
-
   ![图片描述][1]
-
 2. react-loadable
 3. 在react-v16.6之后可以使用React.lazy和React.Suspense替换react-loadable
-    
   ![图片描述][2]
-
   至于替换后的优点，目前只知道减少了2k大小的react-loadable库。。
-
 4. 自定义lazyComponent
-
   ![图片描述][3]
 
 
