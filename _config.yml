@@ -90,3 +90,4 @@ plugins:
 
 exclude:            [vendor]
 port: 4004
+theme: jekyll-theme-slate
